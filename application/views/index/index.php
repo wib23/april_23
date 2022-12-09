@@ -4,8 +4,8 @@
         <h1 class="h2"><?php echo !empty($title) ? $title : null ?></h1>
     </div>
     <div class="alert alert-primary">
-        <h5>Selamat Datang AMD Academy <?= AUTHOR_NAME ?></h5>
-        <span>Semoga harimu menyenangkan</span>
+        <h5>Selamat Datang <?= AUTHOR_NAME ?></h5>
+        <span>Universitas AMD Academy</span>
     </div>
     <h2>By: <?= AUTHOR_NAME ?></h2>
 </main>

@@ -85,4 +85,4 @@ defined('EXIT__AUTO_MIN')      or define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      or define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 defined('APP_NAME')            or define('APP_NAME', 'AMD Academy'); // Nama Aplikasi
-defined('AUTHOR_NAME')         or define('AUTHOR_NAME', 'AprilYandi'); // Author Aplikasi
+defined('AUTHOR_NAME')         or define('AUTHOR_NAME', 'AprilYandi Dwi'); // Author Aplikasi
