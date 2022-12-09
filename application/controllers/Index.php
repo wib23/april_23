@@ -18,7 +18,7 @@ class Index extends BaseController
 
     public function pendaftarprodi1()
     {
-        $data['title'] = 'Grafik Berdasarkan Prodi 1';
+        $data['title'] = 'Grafik Prodi 1';
         $prodi = $this->m_pmb->listProdi();
         foreach ($prodi as $key => $p) {
             $prodi[$key]['jumlah'] = $this->m_pmb->jumlahPendaftarProdi1($p['id_prodi']);
@@ -50,7 +50,7 @@ class Index extends BaseController
 
     public function pendaftarprodi2()
     {
-        $data['title'] = 'Grafik Berdasarkan Prodi 2';
+        $data['title'] = 'Grafik Prodi 2';
         $prodi = $this->m_pmb->listProdi();
         foreach ($prodi as $key => $p) {
             $prodi[$key]['jumlah'] = $this->m_pmb->jumlahPendaftarProdi1($p['id_prodi']);
