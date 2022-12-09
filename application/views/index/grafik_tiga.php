@@ -10,7 +10,7 @@
     </div>
 </main>
 <script>
-getGrafikPie('pendaftar', <?= $grafik1 ?>, 'Grafik Pendaftar Pilihan Prodi Ke-1');
+getGrafikPie('pendaftar', <?= $grafik3 ?>, 'Grafik Pendaftar Tingkat Prestasi');
 
 function getGrafikPie(selector, data, title) {
     Highcharts.chart(selector, {
@@ -24,7 +24,7 @@ function getGrafikPie(selector, data, title) {
             text: title
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.jumlah:.1f} Pendaftar</b>'
+            pointFormat: '{series}: <b>{point.jumlah:.1f} Pendaftar Prestasi</b>'
         },
         accessibility: {
             point: {
@@ -42,7 +42,7 @@ function getGrafikPie(selector, data, title) {
             }
         },
         series: [{
-            name: 'Pendaftar',
+            name: 'Pendaftar Prestasi',
             colorByPoint: true,
             data: data
         }]

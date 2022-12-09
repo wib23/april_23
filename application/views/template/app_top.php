@@ -88,13 +88,25 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarprodi1') ?>">
                                 <span data-feather="file" class="align-text-bottom"></span>
-                                Pendaftar Prodi 1
+                                PENDAFTAR PRODI 1
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarprodi2') ?>">
                                 <span data-feather="file" class="align-text-bottom"></span>
-                                Pendaftar Prodi 2
+                                PENDAFTAR PRODI 2
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= site_url('index/pendaftarprestasi') ?>">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                TINGKAT PRESTASI PENDAFTAR
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= site_url('index/pendaftarjalurmasuk') ?>">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                JALUR MASUK PENDAFTAR
                             </a>
                         </li>
                     </ul>
