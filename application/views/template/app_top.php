@@ -100,13 +100,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarprodi1') ?>">
                                 <span data-feather="file" class="align-text-bottom"></span>
-                                Pendaftar Berdasarkan Prodi 1
+                                Pendaftar Prodi 1
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarprodi2') ?>">
                                 <span data-feather="file" class="align-text-bottom"></span>
-                                Pendaftar Berdasarkan Prodi 2
+                                Pendaftar Prodi 2
                             </a>
                         </li>
                     </ul>
