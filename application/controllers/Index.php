@@ -112,7 +112,7 @@ class Index extends BaseController
             $jalurmasuk[$key]['size'] = rand(10, 30);
         }
 
-        //grafik kedua
+        //grafik keempat
         $hasil = null;
         foreach ($jalurmasuk as $p => $jalurmas) {
             $hasil[$p] = [
