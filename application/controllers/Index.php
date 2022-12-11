@@ -128,4 +128,30 @@ class Index extends BaseController
         $data['grafik4'] = json_encode($hasil);
         $this->render('index/grafik_empat', $data);
     }
+
+    public function pendapatanbank()
+    {
+        $data['title'] = 'Grafik Pendapatan dari Masing-masing Bank';
+        $pndtbank = $this->m_pmb->listBank();
+        foreach ($pndtbank as $key => $bnk) {
+            $pndtbank[$key]['jumlah5'] = $this->m_pmb->jumlahPendapatanBank($bnk['id_bank']);
+            $pndtbank[$key]['size'] = rand(10, 30);
+        }
+
+        //grafik kelima
+        $hasil = null;
+        foreach ($pndtbank as $bnk => $bnka) {
+            $hasil[$bnk] = [
+                "name"  => $bnka['nama_bank'],
+                "jumlah" => $bnka['jumlah5'],
+                "y"     => $bnka['size'],
+                // "sliced" => $sliced,
+                // 'selected' => $selected
+            ];
+        }
+
+        $data['pendaftar'] = $pndtbank;
+        $data['grafik5'] = json_encode($hasil);
+        $this->render('index/grafik_lima', $data);
+    }
 }

@@ -24,7 +24,7 @@ function getGrafikPie(selector, data, title) {
             text: title
         },
         tooltip: {
-            pointFormat: '{series}: <b>{point.jumlah:.1f} Pendaftar Prestasi</b>'
+            pointFormat: '{series.name}: <b>{point.jumlah:.1f}</b>'
         },
         accessibility: {
             point: {
@@ -42,7 +42,7 @@ function getGrafikPie(selector, data, title) {
             }
         },
         series: [{
-            name: 'Pendaftar Prestasi',
+            name: 'Jalur Masuk',
             colorByPoint: true,
             data: data
         }]

@@ -26,6 +26,11 @@ class M_pmb extends CI_Model
         return $this->db->get('jalur_masuk')->result_array();
     }
 
+    public function listBank()
+    {
+        return $this->db->get('bank')->result_array();
+    }
+
     public function jumlahPendaftarProdi1($idProdi)
     {
         $result = 0;
@@ -64,6 +69,17 @@ class M_pmb extends CI_Model
         $result = 0;
         $this->db->where('id_jalur', $id_jalur);
         $data = $this->db->get('pendaftar')->result_array();
+        if (!empty($data)) {
+            $result = count($data);
+        }
+        return $result;
+    }
+
+    public function jumlahPendapatanBank($idj)
+    {
+        $result = 0;
+        $this->db->where('id_bank', $idj);
+        $data = $this->db->get('bank')->result_array();
         if (!empty($data)) {
             $result = count($data);
         }

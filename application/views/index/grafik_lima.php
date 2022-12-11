@@ -10,21 +10,13 @@
     </div>
 </main>
 <script>
-getGrafikPie('pendaftar', <?= $grafik3 ?>, 'Grafik Pendaftar(Nasional dan Internasional)');
+getGrafikPie('pendaftar', <?= $grafik5 ?>, 'Grafik Pendaftar Berdasarkan Pendapatan Masing-masing Bank');
 
 function getGrafikPie(selector, data, title) {
-    var nasional = 272;
-    var internasional = 52;
-    // for (let i = 0; i <= data.length; i++) {
-    //     // console.log(data[i].name);
-    //     if (data[i].name === 'NASIONAL') {
-    //         // totalnasional += data[i].length;
-    //         totalnasional++;
-    //     } else if (data[i].name === 'INTERNASIONAL') {
-    //         // internasional += data[i].length;
-    //         internasional++;
-    //     }
-    // }
+    var bca = 24300000;
+    var mandiri = 24900000;
+    var bni = 25050000;
+    var bri = 27150000;
 
     Highcharts.chart(selector, {
         chart: {
@@ -37,7 +29,7 @@ function getGrafikPie(selector, data, title) {
             text: title
         },
         tooltip: {
-            pointFormat: '{series.name}: <b>{point.jumlah:.1f} jumlah pendaftar</b>'
+            pointFormat: '{series.name}: <b>{point.jumlah:.1f} Hasil Pendapatan </b>'
         },
         accessibility: {
             point: {
@@ -55,15 +47,23 @@ function getGrafikPie(selector, data, title) {
             }
         },
         series: [{
-            name: 'Tingkat Prestasi',
+            name: 'Pendapatan',
             colorByPoint: true,
             data: [{
-                name: 'Nasional',
-                jumlah: nasional,
+                name: 'BCA',
+                jumlah: bca,
                 y: Math.floor(Math.random() * 30) + 1,
             }, {
-                name: 'Internasional',
-                jumlah: internasional,
+                name: 'Mandiri',
+                jumlah: mandiri,
+                y: Math.floor(Math.random() * 30) + 1,
+            }, {
+                name: 'BNI',
+                jumlah: bni,
+                y: Math.floor(Math.random() * 30) + 1,
+            }, {
+                name: 'BRI',
+                jumlah: bri,
                 y: Math.floor(Math.random() * 30) + 1,
             }],
         }]
