@@ -85,4 +85,15 @@ class M_pmb extends CI_Model
         }
         return $result;
     }
+
+    public function jumlahSPBank($jsp)
+    {
+        $result = 0;
+        $this->db->where('id_bank', $jsp);
+        $data = $this->db->get('bank')->result_array();
+        if (!empty($data)) {
+            $result = count($data);
+        }
+        return $result;
+    }
 }

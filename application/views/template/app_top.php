@@ -114,6 +114,13 @@
                                 <span data-feather="file" class="align-text-bottom"></span>
                                 Pendapatan Bank
                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= site_url('index/jumlahyangbayarbelum') ?>">
+                                <span data-feather="file" class="align-text-bottom"></span>
+                                Perbandingan Status Pembayaran Pendaftar dari masing-masing Bank
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>

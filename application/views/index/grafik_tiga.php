@@ -13,8 +13,8 @@
 getGrafikPie('pendaftar', <?= $grafik3 ?>, 'Grafik Pendaftar(Nasional dan Internasional)');
 
 function getGrafikPie(selector, data, title) {
-    var nasional = 272;
-    var internasional = 52;
+    var nasional = 287;
+    var internasional = 65;
     // for (let i = 0; i <= data.length; i++) {
     //     // console.log(data[i].name);
     //     if (data[i].name === 'NASIONAL') {

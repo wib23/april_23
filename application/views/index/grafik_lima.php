@@ -13,10 +13,10 @@
 getGrafikPie('pendaftar', <?= $grafik5 ?>, 'Grafik Pendaftar Berdasarkan Pendapatan Masing-masing Bank');
 
 function getGrafikPie(selector, data, title) {
-    var bca = 24300000;
-    var mandiri = 24900000;
-    var bni = 25050000;
-    var bri = 27150000;
+    var bca = 24450000;
+    var mandiri = 25650000;
+    var bni = 22800000;
+    var bri = 24300000;
 
     Highcharts.chart(selector, {
         chart: {
