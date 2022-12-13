@@ -87,37 +87,37 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarprodi1') ?>">
-                                <span data-feather="file" class="align-text-bottom"></span>
+                                <span data-feather="pie-chart" class="align-text-bottom"></span>
                                 PENDAFTAR PRODI 1
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarprodi2') ?>">
-                                <span data-feather="file" class="align-text-bottom"></span>
+                                <span data-feather="pie-chart" class="align-text-bottom"></span>
                                 PENDAFTAR PRODI 2
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarprestasi') ?>">
-                                <span data-feather="file" class="align-text-bottom"></span>
+                                <span data-feather="menu" class="align-text-bottom"></span>
                                 TINGKAT PRESTASI PENDAFTAR
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendaftarjalurmasuk') ?>">
-                                <span data-feather="file" class="align-text-bottom"></span>
+                                <span data-feather="menu" class="align-text-bottom"></span>
                                 JALUR MASUK PENDAFTAR
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/pendapatanbank') ?>">
-                                <span data-feather="file" class="align-text-bottom"></span>
-                                PENPADATAN BANK
+                                <span data-feather="pie-chart" class="align-text-bottom"></span>
+                                PENDAPATAN BANK
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= site_url('index/jumlahyangbayarbelum') ?>">
-                                <span data-feather="file" class="align-text-bottom"></span>
+                                <span data-feather="pie-chart" class="align-text-bottom"></span>
                                 PERBANDINGAN STATUS PEMBAYARAN PENDAFTAR DARI MASING-MASING BANK
                             </a>
                         </li>
